@@ -29,7 +29,7 @@
                 <div class="flex items-center gap-4 ">
 
                    <div class="flex items-center gap-2 bg-green-100 py-2 px-6 rounded-full ">
-                    <p class="text-lg font-bold" id="count">0</p>
+                    <p class="text-lg font-bold" id="fav-count">0</p>
                     <img src="./assets/heart.png" alt="" id="heart-logo" class="w-8">
                    </div>
 
@@ -39,7 +39,7 @@
                    </div>
 
                    <div class="bg-green-500 py-2 px-6 rounded-full">
-                    <p class="text-white text-lg font-semibold ">0 Copy</p>
+                    <p class="text-white text-lg font-semibold" id="copy-count">0 Copy</p>
                    </div>
 
                 </div>
@@ -65,7 +65,7 @@
                 <!-- Cards Section -->
                 <div class="grid w-full grid-cols-1 lg:grid-cols-3 lg:w-10/12 justify-around gap-8">
                    <!-- Card - 1 -->
-                    <div class="bg-white rounded-xl p-8">
+                    <div class="bg-white rounded-xl p-8 shadow-lg">
                         <!-- Service Icon & Fav Icon -->
                         <div class="flex items-center justify-between">
                             <img src="./assets/emergency.png" alt="" class="w-16 bg-red-100 p-4 mb-4 rounded-xl">
@@ -75,18 +75,18 @@
                         <div class="mb-6">
                             <h1 class="text-2xl font-bold">National Emergency Number</h1>
                             <p class="text-lg text-gray-700 mb-6">National Emergency</p>
-                            <h1 class="text-2xl font-bold">999</h1>
+                            <h1 class="text-2xl font-bold help-number">999</h1>
                             <p class="bg-gray-100 inline-block py-2 px-4 rounded-2xl text-lg text-gray-700">All</p>
                         </div>
                         <!-- Card Buttons -->
                         <div class="flex flex-col md:flex-row justify-center gap-4">
-                            <button class="text-gray-700 text-xl py-2 px-16 rounded-xl text-center border-1 border-gray-400 cursor-pointer hover:bg-black hover:text-white"><i class="fa-solid fa-copy"></i> Copy</button>
+                            <button class="text-gray-700 text-xl py-2 px-16 rounded-xl text-center border-1 border-gray-400 cursor-pointer hover:bg-black hover:text-white copy-btn"><i class="fa-solid fa-copy"></i> Copy</button>
                             <button class="bg-green-500 text-white text-xl py-2 px-16 rounded-xl text-center cursor-pointer hover:bg-gray-300 hover:text-white"><i class="fa-solid fa-phone text-white text-base mr-1"></i> Call</button>
                         </div>
                     </div>
 
                     <!-- Card - 2 -->
-                    <div class="bg-white rounded-xl p-8">
+                    <div class="bg-white rounded-xl p-8 shadow-md">
                         <!-- Service Icon & Fav Icon -->
                         <div class="flex items-center justify-between">
                             <img src="./assets/police.png" alt="" class="w-16 bg-blue-100 p-4 mb-4 rounded-xl">
@@ -96,18 +96,18 @@
                         <div class="mb-6">
                             <h1 class="text-2xl font-bold">Police Helpline Number</h1>
                             <p class="text-lg text-gray-700 mb-6">Police</p>
-                            <h1 class="text-2xl font-bold">999</h1>
+                            <h1 class="text-2xl font-bold help-number">999</h1>
                             <p class="bg-gray-100 inline-block py-2 px-4 rounded-2xl text-lg text-gray-700">Police</p>
                         </div>
                         <!-- Card Buttons -->
                         <div class="flex flex-col md:flex-row justify-center gap-4">
-                           <button class="text-gray-700 text-xl py-2 px-16 rounded-xl text-center border-1 border-gray-400 cursor-pointer hover:bg-black hover:text-white"><i class="fa-solid fa-copy"></i> Copy</button>
+                           <button class="text-gray-700 text-xl py-2 px-16 rounded-xl text-center border-1 border-gray-400 cursor-pointer hover:bg-black hover:text-white copy-btn"><i class="fa-solid fa-copy"></i> Copy</button>
                             <button class="bg-green-500 text-white text-xl py-2 px-16 rounded-xl text-center cursor-pointer hover:bg-gray-300 hover:text-white"><i class="fa-solid fa-phone text-white text-base mr-1"></i> Call</button>
                         </div>
                     </div>
 
                     <!-- Card - 3 -->
-                    <div class="bg-white rounded-xl p-8">
+                    <div class="bg-white rounded-xl p-8 shadow-md">
                         <!-- Service Icon & Fav Icon -->
                         <div class="flex items-center justify-between">
                             <img src="./assets/fire-service.png" alt="" class="w-16 bg-red-100 p-4 mb-4 rounded-xl">
@@ -117,18 +117,18 @@
                         <div class="mb-6">
                             <h1 class="text-2xl font-bold">Fire Service Number</h1>
                             <p class="text-lg text-gray-700 mb-6">Fire Service</p>
-                            <h1 class="text-2xl font-bold">999</h1>
+                            <h1 class="text-2xl font-bold help-number">999</h1>
                             <p class="bg-gray-100 inline-block py-2 px-4 rounded-2xl text-lg text-gray-700">Fire</p>
                         </div>
                         <!-- Card Buttons -->
                         <div class="flex flex-col md:flex-row justify-center gap-4">
-                           <button class="text-gray-700 text-xl py-2 px-16 rounded-xl text-center border-1 border-gray-400 cursor-pointer hover:bg-black hover:text-white"><i class="fa-solid fa-copy"></i> Copy</button>
+                           <button class="text-gray-700 text-xl py-2 px-16 rounded-xl text-center border-1 border-gray-400 cursor-pointer hover:bg-black hover:text-white copy-btn"><i class="fa-solid fa-copy"></i> Copy</button>
                             <button class="bg-green-500 text-white text-xl py-2 px-16 rounded-xl text-center cursor-pointer hover:bg-gray-300 hover:text-white"><i class="fa-solid fa-phone text-white text-base mr-1"></i> Call</button>
                         </div>
                     </div>
 
                     <!-- Card - 4 -->
-                    <div class="bg-white rounded-xl p-8">
+                    <div class="bg-white rounded-xl p-8 shadow-md">
                         <!-- Service Icon & Fav Icon -->
                         <div class="flex items-center justify-between">
                             <img src="./assets/ambulance.png" alt="" class="w-16 bg-red-100 p-4 mb-4 rounded-xl">
@@ -138,18 +138,18 @@
                         <div class="mb-6">
                             <h1 class="text-2xl font-bold">Ambulance Service</h1>
                             <p class="text-lg text-gray-700 mb-6">Ambulance</p>
-                            <h1 class="text-2xl font-bold">1994-999999</h1>
+                            <h1 class="text-2xl font-bold help-number">1994-999999</h1>
                             <p class="bg-gray-100 inline-block py-2 px-4 rounded-2xl text-lg text-gray-700">Health</p>
                         </div>
                         <!-- Card Buttons -->
                         <div class="flex flex-col md:flex-row justify-center gap-4">
-                           <button class="text-gray-700 text-xl py-2 px-16 rounded-xl text-center border-1 border-gray-400 cursor-pointer hover:bg-black hover:text-white"><i class="fa-solid fa-copy"></i> Copy</button>
+                           <button class="text-gray-700 text-xl py-2 px-16 rounded-xl text-center border-1 border-gray-400 cursor-pointer hover:bg-black hover:text-white copy-btn"><i class="fa-solid fa-copy"></i> Copy</button>
                             <button class="bg-green-500 text-white text-xl py-2 px-16 rounded-xl text-center cursor-pointer hover:bg-gray-300 hover:text-white"><i class="fa-solid fa-phone text-white text-base mr-1"></i> Call</button>
                         </div>
                     </div>
 
                     <!-- Card - 5 -->
-                    <div class="bg-white rounded-xl p-8">
+                    <div class="bg-white rounded-xl p-8 shadow-md">
                         <!-- Service Icon & Fav Icon -->
                         <div class="flex items-center justify-between">
                             <img src="./assets/emergency.png" alt="" class="w-16 bg-red-100 p-4 mb-4 rounded-xl">
@@ -159,18 +159,18 @@
                         <div class="mb-6">
                             <h1 class="text-2xl font-bold">Women & Child Helpline</h1>
                             <p class="text-lg text-gray-700 mb-6">Women & Child Helpline</p>
-                            <h1 class="text-2xl font-bold">109</h1>
+                            <h1 class="text-2xl font-bold help-number">109</h1>
                             <p class="bg-gray-100 inline-block py-2 px-4 rounded-2xl text-lg text-gray-700">Help</p>
                         </div>
                         <!-- Card Buttons -->
                         <div class="flex flex-col md:flex-row justify-center gap-4">
-                           <button class="text-gray-700 text-xl py-2 px-16 rounded-xl text-center border-1 border-gray-400 cursor-pointer hover:bg-black hover:text-white"><i class="fa-solid fa-copy"></i> Copy</button>
+                           <button class="text-gray-700 text-xl py-2 px-16 rounded-xl text-center border-1 border-gray-400 cursor-pointer hover:bg-black hover:text-white copy-btn"><i class="fa-solid fa-copy"></i> Copy</button>
                             <button class="bg-green-500 text-white text-xl py-2 px-16 rounded-xl text-center cursor-pointer hover:bg-gray-300 hover:text-white"><i class="fa-solid fa-phone text-white text-base mr-1"></i> Call</button>
                         </div>
                     </div>
 
                     <!-- Card - 6 -->
-                    <div class="bg-white rounded-xl p-8">
+                    <div class="bg-white rounded-xl p-8 shadow-md">
                         <!-- Service Icon & Fav Icon -->
                         <div class="flex items-center justify-between">
                             <img src="./assets/emergency.png" alt="" class="w-16 bg-red-100 p-4 mb-4 rounded-xl">
@@ -180,18 +180,18 @@
                         <div class="mb-6">
                             <h1 class="text-2xl font-bold">Anti-Corruption Helpline</h1>
                             <p class="text-lg text-gray-700 mb-6">Anti-Corruption</p>
-                            <h1 class="text-2xl font-bold">106</h1>
+                            <h1 class="text-2xl font-bold help-number">106</h1>
                             <p class="bg-gray-100 inline-block py-2 px-4 rounded-2xl text-lg text-gray-700">Govt.</p>
                         </div>
                         <!-- Card Buttons -->
                         <div class="flex flex-col md:flex-row justify-center gap-4">
-                            <button class="text-gray-700 text-xl py-2 px-16 rounded-xl text-center border-1 border-gray-400 cursor-pointer hover:bg-black hover:text-white"><i class="fa-solid fa-copy"></i> Copy</button>
+                            <button class="text-gray-700 text-xl py-2 px-16 rounded-xl text-center border-1 border-gray-400 cursor-pointer hover:bg-black hover:text-white copy-btn"><i class="fa-solid fa-copy"></i> Copy</button>
                             <button class="bg-green-500 text-white text-xl py-2 px-16 rounded-xl text-center cursor-pointer hover:bg-gray-300 hover:text-white"><i class="fa-solid fa-phone text-white text-base mr-1"></i> Call</button>
                         </div>
                     </div>
 
                     <!-- Card - 7 -->
-                    <div class="bg-white rounded-xl p-8">
+                    <div class="bg-white rounded-xl p-8 shadow-md">
                         <!-- Service Icon & Fav Icon -->
                         <div class="flex items-center justify-between">
                             <img src="./assets/emergency.png" alt="" class="w-16 bg-red-100 p-4 mb-4 rounded-xl">
@@ -201,18 +201,18 @@
                         <div class="mb-6">
                             <h1 class="text-2xl font-bold">Electricity Helpline</h1>
                             <p class="text-lg text-gray-700 mb-6">Electricity Outage</p>
-                            <h1 class="text-2xl font-bold">16216</h1>
+                            <h1 class="text-2xl font-bold help-number">16216</h1>
                             <p class="bg-gray-100 inline-block py-2 px-4 rounded-2xl text-lg text-gray-700">Electricity</p>
                         </div>
                         <!-- Card Buttons -->
                         <div class="flex flex-col md:flex-row justify-center gap-4">
-                           <button class="text-gray-700 text-xl py-2 px-16 rounded-xl text-center border-1 border-gray-400 cursor-pointer hover:bg-black hover:text-white"><i class="fa-solid fa-copy"></i> Copy</button>
+                           <button class="text-gray-700 text-xl py-2 px-16 rounded-xl text-center border-1 border-gray-400 cursor-pointer hover:bg-black hover:text-white copy-btn"><i class="fa-solid fa-copy"></i> Copy</button>
                             <button class="bg-green-500 text-white text-xl py-2 px-16 rounded-xl text-center cursor-pointer hover:bg-gray-300 hover:text-white"><i class="fa-solid fa-phone text-white text-base mr-1"></i> Call</button>
                         </div>
                     </div>
 
                     <!-- Card - 8 -->
-                    <div class="bg-white rounded-xl p-8">
+                    <div class="bg-white rounded-xl p-8 shadow-md">
                         <!-- Service Icon & Fav Icon -->
                         <div class="flex items-center justify-between">
                             <img src="./assets/emergency.png" alt="" class="w-16 bg-red-100 p-4 mb-4 rounded-xl">
@@ -222,18 +222,18 @@
                         <div class="mb-6">
                             <h1 class="text-2xl font-bold">Brac Helpline</h1>
                             <p class="text-lg text-gray-700 mb-6">Brac</p>
-                            <h1 class="text-2xl font-bold">16445</h1>
+                            <h1 class="text-2xl font-bold help-number">16445</h1>
                             <p class="bg-gray-100 inline-block py-2 px-4 rounded-2xl text-lg text-gray-700">NGO</p>
                         </div>
                         <!-- Card Buttons -->
                         <div class="flex flex-col md:flex-row justify-center gap-4">
-                           <button class="text-gray-700 text-xl py-2 px-16 rounded-xl text-center border-1 border-gray-400 cursor-pointer hover:bg-black hover:text-white"><i class="fa-solid fa-copy"></i> Copy</button>
+                           <button class="text-gray-700 text-xl py-2 px-16 rounded-xl text-center border-1 border-gray-400 cursor-pointer hover:bg-black hover:text-white copy-btn"><i class="fa-solid fa-copy"></i> Copy</button>
                            <button class="bg-green-500 text-white text-xl py-2 px-16 rounded-xl text-center cursor-pointer hover:bg-gray-300 hover:text-white"><i class="fa-solid fa-phone text-white text-base mr-1"></i> Call</button>
                         </div>
                     </div>
 
                     <!-- Card - 9 -->
-                    <div class="bg-white rounded-xl p-8">
+                    <div class="bg-white rounded-xl p-8 shadow-md">
                         <!-- Service Icon & Fav Icon -->
                         <div class="flex items-center justify-between">
                             <img src="./assets/emergency.png" alt="" class="w-16 bg-red-100 p-4 mb-4 rounded-xl">
@@ -243,19 +243,19 @@
                         <div class="mb-6">
                             <h1 class="text-2xl font-bold">Bangladesh Railway Helpline </h1>
                             <p class="text-lg text-gray-700 mb-6">Bangladesh Railway</p>
-                            <h1 class="text-2xl font-bold">163</h1>
+                            <h1 class="text-2xl font-bold help-number">163</h1>
                             <p class="bg-gray-100 inline-block py-2 px-4 rounded-2xl text-lg text-gray-700">Travel</p>
                         </div>
                         <!-- Card Buttons -->
                         <div class="flex flex-col md:flex-row justify-center gap-4">
-                            <button class="text-gray-700 text-xl py-2 px-16 rounded-xl text-center border-1 border-gray-400 cursor-pointer hover:bg-black hover:text-white"><i class="fa-solid fa-copy"></i> Copy</button>
+                            <button class="text-gray-700 text-xl py-2 px-16 rounded-xl text-center border-1 border-gray-400 cursor-pointer hover:bg-black hover:text-white copy-btn"><i class="fa-solid fa-copy"></i> Copy</button>
                             <button class="bg-green-500 text-white text-xl py-2 px-16 rounded-xl text-center cursor-pointer hover:bg-gray-300 hover:text-white"><i class="fa-solid fa-phone text-white text-base mr-1"></i> Call</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Call History Section -->
-                <div class="w-full lg:w-80 bg-white rounded-xl p-6 shadow-md">
+                <div class="w-full lg:w-80 bg-white rounded-xl p-6 shadow-lg">
                     <div class="flex justify-between items-center mt-6 mb-4">
                         <h2 class="text-lg font-semibold"><i class="fa-regular fa-clock text-base mr-1"></i> Call History</h2>
                         <button class="bg-green-500 text-white px-6 py-2 rounded-3xl cursor-pointer hover:bg-gray-300 hover:text-white">Clear</button>
