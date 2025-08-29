@@ -396,13 +396,6 @@ callLogTravel.addEventListener('click', function() {
 
 
 
-
-
-
-
-
-
-
 // Clear Button
 
 const clearBtn = document.getElementById('clear-btn')
