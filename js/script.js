@@ -1,4 +1,5 @@
-let count = 0;
+let favCount = 0;
+let copyCount = 0;
 
 
 // Fav Count
@@ -6,8 +7,8 @@ const favBtn = document.getElementsByClassName('fav-btn');
 for (let i = 0; i < favBtn.length; i++) { 
 
     favBtn[i].addEventListener('click', function() {
-        count++;
-        document.getElementById('fav-count').innerText = count;
+        favCount++;
+        document.getElementById('fav-count').innerText = favCount;
     })
 
 }
@@ -17,8 +18,8 @@ for (let i = 0; i < favBtn.length; i++) {
 const copyBtn = document.getElementsByClassName('copy-btn');
 for(let i = 0; i < copyBtn.length; i++) {
     copyBtn[i].addEventListener('click', function(){
-        count++
-        document.getElementById('copy-count').innerText = count + " "  + 'Copy';
+        copyCount++
+        document.getElementById('copy-count').innerText = copyCount + " "  + 'Copy';
     })
 }
 
