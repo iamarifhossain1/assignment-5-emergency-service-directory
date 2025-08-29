@@ -1,6 +1,6 @@
-// Fav Count
 let count = 0;
 
+// Fav Count
 const favBtn = document.getElementsByClassName('fav-btn');
 for (let i = 0; i < favBtn.length; i++) { 
 
@@ -21,21 +21,36 @@ for(let i = 0; i < copyBtn.length; i++) {
     })
 }
 
+// Copy Number
 
+const copyBtns = document.getElementsByClassName('copy-btn');
 
-document.addEventListener('DOMContentLoaded', function() {
-    const copyBtn = document.getElementsByClassName('copy-btn');
-    const helpLineNumber = document.getElementsByClassName('help-number');
+  for (let i = 0; i < copyBtns.length; i++) {
+    copyBtns[i].addEventListener('click', function () {
+      const parentSection = this.closest('div').previousElementSibling;
+      const numberElement = parentSection.querySelector('.help-number');
 
-    copyBtn.addEventListener('click', function() {
-        const number = helpLineNumber.innerText;
+      if (numberElement) {
+        const number = numberElement.innerText.trim();
 
-        navigator.clipboard.writeText(number)
-            .then(() => {
-                alert('Number copied: ' + number);
-            })
-            .catch(err => {
-                console.error('Failed to copy: ', err);
-            });
+    if (navigator.clipboard && window.isSecureContext) {
+          navigator.clipboard.writeText(number)
+            .then(() => alert('Copied: ' + number))
+            .catch(err => console.error('Copy failed:', err));
+        } else {
+          const tempInput = document.createElement('textarea');
+          tempInput.value = number;
+          document.body.appendChild(tempInput);
+          tempInput.select();
+          document.execCommand('copy');
+          document.body.removeChild(tempInput);
+          alert('Copied: ' + number);
+        }
+      }
     });
-});
+  }
+
+// Call Button
+
+const callBtn = document.getElementsByClassName('call-btn');
+alert('')
