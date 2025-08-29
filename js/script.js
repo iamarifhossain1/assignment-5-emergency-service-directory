@@ -1,6 +1,8 @@
 let favCount = 0;
 let copyCount = 0;
+const callHistoryData = [
 
+];
 
 // Fav Count
 const favBtn = document.getElementsByClassName('fav-btn');
@@ -73,8 +75,18 @@ for (let i = 0; i < callBtn.length; i++) {
 
 document.getElementById('emergency-btn')
 .addEventListener('click', function() {
+    const callLog = {
+      name: 'National Emergency Number',
+      number: 999,
+      date: new Date().toLocaleTimeString(),
+    }
+
+    callHistoryData.push(callLog);
+  
+
   alert ('📞 Calling... National Emergency Number 999...')
 })
+
 
 document.getElementById('police-btn')
 .addEventListener('click', function() {
@@ -118,3 +130,282 @@ document.getElementById('travel-btn')
   alert ('📞 Calling... Bangladesh Railway Helpline Number 163...')
 })
 
+
+
+// Call Logs
+
+const callLogEmergency = document.getElementById('emergency-btn');
+callLogEmergency.addEventListener('click', function() {
+  const callContainer = document.getElementById('call-history-container');
+
+  const callLog = {
+      name: 'National Emergency Number',
+      number: 999,
+      date: new Date().toLocaleTimeString(),
+    }
+
+  const newCallLog = document.createElement('div');
+  newCallLog.innerHTML = `
+  <div class="bg-gray-100 py-2 px-4 rounded-xl mt-4">
+    <div>
+      <h1 class="text-lg font-bold">${callLog.name}</h1>
+    </div>
+
+    <div class="flex items-center justify-between mt-2">
+      <p class="text-gray-500">${callLog.number}</p>
+      <p class="text-gray-500">${callLog.date}</p>
+    </div>
+  </div>
+
+  `
+
+  callContainer.appendChild(newCallLog)
+
+})
+
+const callLogPolice = document.getElementById('police-btn');
+callLogPolice.addEventListener('click', function() {
+  const callContainer = document.getElementById('call-history-container');
+
+  const callLog = {
+      name: 'Police Helpline Number',
+      number: 999,
+      date: new Date().toLocaleTimeString(),
+    }
+
+  const newCallLog = document.createElement('div');
+  newCallLog.innerHTML = `
+  <div class="bg-gray-100 py-2 px-4 rounded-xl mt-4">
+    <div>
+      <h1 class="text-lg font-bold">${callLog.name}</h1>
+    </div>
+
+    <div class="flex items-center justify-between mt-2">
+      <p class="text-gray-500">${callLog.number}</p>
+      <p class="text-gray-500">${callLog.date}</p>
+    </div>
+  </div>
+
+  `
+
+  callContainer.appendChild(newCallLog)
+
+})
+
+const callLogFire = document.getElementById('fire-btn');
+callLogFire.addEventListener('click', function() {
+  const callContainer = document.getElementById('call-history-container');
+
+  const callLog = {
+      name: 'Fire Service Number',
+      number: 999,
+      date: new Date().toLocaleTimeString(),
+    }
+
+  const newCallLog = document.createElement('div');
+  newCallLog.innerHTML = `
+  <div class="bg-gray-100 py-2 px-4 rounded-xl mt-4">
+    <div>
+      <h1 class="text-lg font-bold">${callLog.name}</h1>
+    </div>
+
+    <div class="flex items-center justify-between mt-2">
+      <p class="text-gray-500">${callLog.number}</p>
+      <p class="text-gray-500">${callLog.date}</p>
+    </div>
+  </div>
+
+  `
+
+  callContainer.appendChild(newCallLog)
+
+})
+
+const callLogAmbulance = document.getElementById('ambulance-btn');
+callLogAmbulance.addEventListener('click', function() {
+  const callContainer = document.getElementById('call-history-container');
+
+  const callLog = {
+      name: 'Ambulance Service',
+      number: '1994-999999',
+      date: new Date().toLocaleTimeString(),
+    }
+
+  const newCallLog = document.createElement('div');
+  newCallLog.innerHTML = `
+  <div class="bg-gray-100 py-2 px-4 rounded-xl mt-4">
+    <div>
+      <h1 class="text-lg font-bold">${callLog.name}</h1>
+    </div>
+
+    <div class="flex items-center justify-between mt-2">
+      <p class="text-gray-500">${callLog.number}</p>
+      <p class="text-gray-500">${callLog.date}</p>
+    </div>
+  </div>
+
+  `
+
+  callContainer.appendChild(newCallLog)
+
+})
+
+const callLogWomen = document.getElementById('women-btn');
+callLogWomen.addEventListener('click', function() {
+  const callContainer = document.getElementById('call-history-container');
+
+  const callLog = {
+      name: 'Women & Child Helpline',
+      number: 109,
+      date: new Date().toLocaleTimeString(),
+    }
+
+  const newCallLog = document.createElement('div');
+  newCallLog.innerHTML = `
+  <div class="bg-gray-100 py-2 px-4 rounded-xl mt-4">
+    <div>
+      <h1 class="text-lg font-bold">${callLog.name}</h1>
+    </div>
+
+    <div class="flex items-center justify-between mt-2">
+      <p class="text-gray-500">${callLog.number}</p>
+      <p class="text-gray-500">${callLog.date}</p>
+    </div>
+  </div>
+
+  `
+
+  callContainer.appendChild(newCallLog)
+
+})
+
+const callLogCorruption = document.getElementById('corruption-btn');
+callLogCorruption.addEventListener('click', function() {
+  const callContainer = document.getElementById('call-history-container');
+
+  const callLog = {
+      name: 'Anti-Corruption Helpline',
+      number: 106,
+      date: new Date().toLocaleTimeString(),
+    }
+
+  const newCallLog = document.createElement('div');
+  newCallLog.innerHTML = `
+  <div class="bg-gray-100 py-2 px-4 rounded-xl mt-4">
+    <div>
+      <h1 class="text-lg font-bold">${callLog.name}</h1>
+    </div>
+
+    <div class="flex items-center justify-between mt-2">
+      <p class="text-gray-500">${callLog.number}</p>
+      <p class="text-gray-500">${callLog.date}</p>
+    </div>
+  </div>
+
+  `
+
+  callContainer.appendChild(newCallLog)
+
+})
+
+const callLogElectricity = document.getElementById('electricity-btn');
+callLogElectricity.addEventListener('click', function() {
+  const callContainer = document.getElementById('call-history-container');
+
+  const callLog = {
+      name: 'Electricity Helpline',
+      number: 16216,
+      date: new Date().toLocaleTimeString(),
+    }
+
+  const newCallLog = document.createElement('div');
+  newCallLog.innerHTML = `
+  <div class="bg-gray-100 py-2 px-4 rounded-xl mt-4">
+    <div>
+      <h1 class="text-lg font-bold">${callLog.name}</h1>
+    </div>
+
+    <div class="flex items-center justify-between mt-2">
+      <p class="text-gray-500">${callLog.number}</p>
+      <p class="text-gray-500">${callLog.date}</p>
+    </div>
+  </div>
+
+  `
+
+  callContainer.appendChild(newCallLog)
+
+})
+
+const callLogBrac = document.getElementById('brac-btn');
+callLogBrac.addEventListener('click', function() {
+  const callContainer = document.getElementById('call-history-container');
+
+  const callLog = {
+      name: 'Brac Helpline',
+      number: 16445,
+      date: new Date().toLocaleTimeString(),
+    }
+
+  const newCallLog = document.createElement('div');
+  newCallLog.innerHTML = `
+  <div class="bg-gray-100 py-2 px-4 rounded-xl mt-4">
+    <div>
+      <h1 class="text-lg font-bold">${callLog.name}</h1>
+    </div>
+
+    <div class="flex items-center justify-between mt-2">
+      <p class="text-gray-500">${callLog.number}</p>
+      <p class="text-gray-500">${callLog.date}</p>
+    </div>
+  </div>
+
+  `
+
+  callContainer.appendChild(newCallLog)
+
+})
+
+const callLogTravel = document.getElementById('travel-btn');
+callLogTravel.addEventListener('click', function() {
+  const callContainer = document.getElementById('call-history-container');
+
+  const callLog = {
+      name: 'Bangladesh Railway Helpline',
+      number: 163,
+      date: new Date().toLocaleTimeString(),
+    }
+
+  const newCallLog = document.createElement('div');
+  newCallLog.innerHTML = `
+  <div class="bg-gray-100 py-2 px-4 rounded-xl mt-4">
+    <div>
+      <h1 class="text-lg font-bold">${callLog.name}</h1>
+    </div>
+
+    <div class="flex items-center justify-between mt-2">
+      <p class="text-gray-500">${callLog.number}</p>
+      <p class="text-gray-500">${callLog.date}</p>
+    </div>
+  </div>
+
+  `
+  callContainer.appendChild(newCallLog)
+
+})
+
+
+
+
+
+
+
+
+
+
+// Clear Button
+
+const clearBtn = document.getElementById('clear-btn')
+.addEventListener('click', function(){
+  const callContainer = document.getElementById('call-history-container').innerHTML = '';
+})
